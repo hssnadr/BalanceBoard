@@ -76,3 +76,15 @@
 	<p>Once its done, you can directly receive the acceleration data sensed by the <b>Movuino</b> (or <b>Streamo</b>) into the <b>PureData</b> patch. There the data are processeced to generate sound modulations.</p>
 	<p><img src="https://raw.githubusercontent.com/hssnadr/BalanceBoard/master/images/Manual/SetUp.jpg" alt="SetUp" /></p>
 </div>
+
+<!-- PRINCIPLE -->
+<h3 style="text-align: center; padding: 30px 0px 10px 0;">Principle</h3>
+<p>To sense acceleration, the accelerometers are based on the <b>Newton's 2nd law</b>, this law highlights a direct link between the size of a spring and the acceleration of its mass.</p>
+
+<img src="https://raw.githubusercontent.com/hssnadr/BalanceBoard/master/images/Manual/Principle01.jpg" alt="Principle01" />
+
+<p>On this extremely simplified view of the electronic embedded in an accelerometer, you notice the sensor will be affected by the <b>gravity</b> in addition to its own acceleration.</p>
+<p>Most of the time this extra data is a noise, but in our case this will allow us to get the orientation of the <b>Movuino</b> simply by reading the <b>acceleration data on the XY plan</b>.</p>
+<p>The way the <b>Movuino</b> is placed on the balance plate minimizes its own acceleration. Thus, the main acceleration component sensed is the effect of gravity. Smoothing the data with the <b>low pass filter</b> enhance this principle.</p>
+
+<img src="https://raw.githubusercontent.com/hssnadr/BalanceBoard/master/images/Manual/Principle02.jpg" alt="Principle02" />
